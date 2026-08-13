@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #333;
+  color: white;
+}
+
+.nav-item:hover{
+  transition-duration: 1s;
+  transition-property: initial;
+  font-size: 25px;
+}
+
+.nav-link.destaque {
+  background-color: rgb(160, 43, 43);
+  border-radius: 20px;
+  padding: 6px 12px;
+  display: inline-block; /* impede que ocupe 100% da largura */
+  text-align: center;
+}
+
+
+/* Main */
+.princ {
+  background: url('../IMAGENS/fundo.png') center/cover no-repeat;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#princ-p {
+  font-size: 30px;
+  margin: 0 20px;
+}
+#TituloPrinc {
+  max-width: 90%;
+  height: auto;
+}
+
+ 
+/* Responsividade extra (chat gpt ajudou por que nao tava conseguindo) */
+@media (max-width: 768px) {
+  #princ-p {
+    font-size: 22px;
+    margin-top: 60px;
+  }
+  .princ{
+    float: right;
+  }
+  #area-alu a {
+    display: inline-block;
+    width: auto;
+  }
+}

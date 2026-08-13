@@ -1,0 +1,134 @@
+/* Zera margin padrão e define fonte */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(../IMAGENS/fotoarea.webp) no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+
+/* Card centralizado */
+.profile-container {
+  max-width: 700px;
+  margin: 40px auto;
+  background-color: #050505;
+  border-radius: 18px;
+  padding: 24px 28px 32px;
+  border: 1px solid #333;
+}
+
+.profile-container h1 {
+  font-size: 26px;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+/* Layout dos campos */
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.profile-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.profile-label {
+  font-size: 14px;
+  color: #eeeeee;
+}
+
+/* Inputs estilizados */
+.profile-input {
+  width: 100%;
+  background-color: transparent;
+  border-radius: 14px;
+  border: 1px solid #444;
+  padding: 10px 14px;
+  color: #ffffff;
+  outline: none;
+  font-size: 15px;
+}
+
+.profile-input:focus {
+  border-color: #f0284a;
+}
+
+.profile-text {
+    font-size: 15px;
+    color: #ccc;
+    padding: 6px 0;
+}
+
+
+/* Botão Sair */
+.logout-btn {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  padding: 10px 0;
+  border-radius: 999px;
+  border: 1px solid #f0284a;
+  color: #f0284a;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.logout-btn:hover {
+  background-color: #f0284a;
+  color: #fff;
+}
+
+
+
+.alterar-btn {
+  background-color: #28a745;
+  color: #ffffff;
+  padding: 6px 14px;       /* botão menor */
+  border: none;
+  border-radius: 8px;
+  margin-top: -6px;        /* aproxima do input */
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  width: auto;             /* deixa pequeno */
+  align-self: flex-start;  /* joga pra esquerda */
+}
+
+
+.alterar-btn:hover {
+  background-color: #1f8a39;
+}
+
+.salvar-btn {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 10px 0;
+  border: none;
+  border-radius: 12px;
+  margin-top: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  width: 100%;
+}
+
+.salvar-btn:hover {
+  background-color: #0062cc;
+}
+
+.success-msg {
+  color: #4eff4e;
+  font-size: 14px;
+  margin-bottom: 10px;
+}

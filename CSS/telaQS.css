@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #333;
+  color: white;
+}
+
+.nav-item:hover{
+  transition-duration: 1s;
+  transition-property: initial;
+  font-size: 25px;
+}
+ 
+.nav-link.destaque {
+  background-color: rgb(160, 43, 43);
+  border-radius: 20px;
+  padding: 6px 12px;
+  display: inline-block; /* impede que ocupe 100% da largura */
+  text-align: center;
+}
+
+#popup {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0.8);
+      background:rgba(255,255,255, 0.8);
+      color: black;
+      opacity: 0.5;
+      padding: 30px 20px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+      z-index: 2;
+      display: none;
+      opacity: 0;
+      animation: fadeInZoom 0.5s ease forwards;
+    }
+    @keyframes fadeInZoom {
+      to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+      }
+    }
+    #tempo {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      display: none;
+      z-index: 1;
+      animation: fadeIn 0.5s ease forwards;
+      opacity: 0;
+    }
+    #fechar-btn {
+      cursor: pointer;
+      padding: 5px 10px;
+      background: #ff5c5c;
+      color: white;
+      border-radius: 5px;
+    }
+
+    
+
+
+  /* Main */
+
+#main.princ {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.container-texto {
+  flex: 1 1 500px;
+  max-width: 700px;
+}
+
+.container-texto h1, .container-texto p {
+  text-align: left;
+}
+
+.container-foto {
+  flex: 1 1 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-foto img {
+  max-width: 60%;
+  height: auto;
+}
+
+/* Link estilizado */
+#AApp {
+  display: inline-block;
+  margin-top: 30px;
+  background-color: #c40000;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+#AApp:hover {
+  background-color: #a60000;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  #main.princ {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .container-texto h1, .container-texto p {
+    text-align: center;
+  }
+
+  .container-foto {
+    margin-top: 20px;
+  }
+}
+
+  
