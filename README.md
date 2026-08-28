@@ -28,13 +28,17 @@ A plataforma web tem como objetivo auxiliar usuários na introdução ao nossos 
 - HTML5
 - CSS3
 - Bootstrap
-- Ferramentas: Visual Studio Code
 
 ### Back-end
 
 - PHP
 - SQL, MySQL
-- Ferramentas: phpMyAdmin
+
+### Ferramentas
+
+- Visual Studio Code
+- phpMYADMIN
+- WampServer
 
 ---
 
